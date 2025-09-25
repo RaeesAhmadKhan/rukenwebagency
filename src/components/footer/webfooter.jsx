@@ -15,7 +15,7 @@ const navLinks = [
 export default function WebFooter() {
   return (
     <>
-    <section className="hidden md:flex flex-col top-0 bottom-0">
+    <section className="hidden lg:flex flex-col top-0 bottom-0">
       {/* Contact Section */}
       <div className="flex p-10 h-[80vh] justify-center items-center mt-43 bg-[#A240E9]">
         <div className="w-1/2 max-w-2xl leading-[75px]">

@@ -31,7 +31,7 @@ const wordAnimation = {
 export default function AboutSection() {
   return (
     <>
-    <section className="hidden md:flex h-[85vh] flex bg-white p-10 z-100 gap-20">
+    <section className="hidden lg:flex h-[85vh] flex bg-white p-10 z-100 gap-20">
       <div className="md:w-1/2 flex items-center justify-center">
         <motion.h2
           initial={{ opacity: 0, y: 80, scale: 1 }}
