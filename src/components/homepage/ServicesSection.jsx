@@ -56,11 +56,12 @@ export default function ServicesSection() {
                     transition duration-100 ease-in-out"
           >
             <p className="text-4xl  md:text-5xl lg:text-7xl font-extrabold text-start px-5">{list.Title}</p>
-            <div className="flex flex-wrap space-x-2 space-y-2 md:max-w-xl md:opacity-0 group-hover:opacity-100 bg-white rounded-2xl transition-opacity duration-500  md:p-10 p-3 m-5 w-fit">
+            <div className="flex flex-wrap space-x-2 space-y-2 md:max-w-xl md:p-10 p-3 m-5 w-fit">
               {list.desc.map((item, index) => (
                 <div
                   key={index}
-                  className="p-2 bg-[#0C0C0C] shadow-sm text-[#FAFAFA] font-medium w-fit h-fit text-xl"
+                  className="p-2 bg-[#EAFF00] border border-[#0c0c0c]
+                  text-[#0C0C0C] font-medium w-fit h-fit text-xl"
                 >
                   {item}
                 </div>
