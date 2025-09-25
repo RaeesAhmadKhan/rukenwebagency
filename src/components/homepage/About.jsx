@@ -31,7 +31,7 @@ const wordAnimation = {
 export default function AboutSection() {
   return (
     <>
-    <section className="hidden md:flex h-[95vh] flex bg-white p-10 z-100 gap-20 overflow-hidden">
+    <section className="hidden lg:flex h-[95vh] flex bg-white p-10 z-100 gap-20 overflow-hidden">
       <div className="md:w-1/2 flex items-center justify-center">
         <motion.h2
           initial={{ opacity: 0, y: 80, scale: 1 }}
@@ -86,7 +86,7 @@ export default function AboutSection() {
 
 
     {/* FOR MOBILE */}
-    <section className=" lg:hidden md:hidden xl:hidden flex flex-wrap bg-white p-10  z-100 gap-20">
+    <section className=" lg:hidden xl:hidden flex flex-wrap bg-white p-10  z-100 gap-20">
       <div className="flex items-center justify-center">
         <motion.h2
           initial={{ opacity: 0, y: 80, scale: 1 }}
@@ -97,7 +97,7 @@ export default function AboutSection() {
             delay: 0.3,
           }}
           viewport={{ once: true, amount: 0.6 }}
-          className="font-extrabold text-4xl text-[#0C0C0C]"
+          className="font-extrabold md:text-6xl text-4xl text-[#0C0C0C]"
         >
           ABOUT RUKEN
         </motion.h2>

@@ -17,7 +17,7 @@ export default function WebFooter() {
     <>
     <section className="hidden lg:flex flex-col">
       {/* Contact Section */}
-      <div className="flex p-10 h-[80vh] justify-center items-center  bg-[#A240E9]">
+      <div className="flex p-10 justify-center items-center  bg-[#A240E9]">
         <div className="w-1/2 max-w-2xl leading-[75px]">
           <motion.h2
             initial={{ opacity: 0, y: 80, scale: 1 }}
