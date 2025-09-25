@@ -1,3 +1,7 @@
+"use client"
+
+import { motion } from "framer-motion";
+
 const ServicesList = [
   {
     Title: "WEB DESIGN",
@@ -43,24 +47,32 @@ const ServicesList = [
 
 export default function ServicesSection() {
   return (
-    <section className="flex flex-col  md:my-30  my-10 overflow-hidden">
-      <h2 className="font-extrabold md:text-8xl text-4xl text-[#0C0C0C] p-10  text-end mb-20">
+    <section className="flex flex-col  md:py-30  py-10 overflow-hidden bg-[#0c0c0c]">
+      <h2 className="font-extrabold md:text-8xl text-5xl text-[#fafafa] md:p-10 p-5 md:text-end text-center mb-20">
         OUR SERVICES
       </h2>
       <div>
         {ServicesList.map((list) => (
+          <motion.div initial={{ opacity: 0, y: 80, scale: 1 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+                delay: 0.3,
+              }}
+              viewport={{ once: true, amount: 0.5 }}>
           <div
             key={list.Numb}
-            className="relative group transition border-1 border-gray-200 p-5 md:p-1 text-center md:flex justify-between items-center bg-[#ffffff] text-[#0c0c0c]
-                    hover:bg-[#0c0c0c] hover:text-[#fafafa] 
+            className="relative group transition  p-5 md:p-1 text-center md:flex justify-between items-center text-[#fafafa]
+                    hover:text-8xl 
                     transition duration-100 ease-in-out"
           >
             <p className="text-4xl  md:text-5xl lg:text-7xl font-extrabold text-start px-5">{list.Title}</p>
-            <div className="flex flex-wrap space-x-2 space-y-2 md:max-w-xl md:p-10 p-3 m-5 w-fit">
+            <div className="flex flex-wrap space-x-2 space-y-2 md:max-w-xl md:p-7 p-3 m-5 w-fit">
               {list.desc.map((item, index) => (
                 <div
                   key={index}
-                  className="p-2 bg-[#EAFF00] border border-[#0c0c0c]
+                  className="p-2 bg-[#EAFF00]
                   text-[#0C0C0C] font-medium w-fit h-fit text-xl"
                 >
                   {item}
@@ -68,6 +80,7 @@ export default function ServicesSection() {
               ))}
             </div>
           </div>
+          </motion.div>
         ))}
       </div>
     </section>

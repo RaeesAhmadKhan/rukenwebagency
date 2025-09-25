@@ -44,11 +44,11 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-xl mx-auto p-6 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl space-y-3"
+      className="max-w-xl mx-auto p-6 bg-white/80 shadow-4xl rounded-2xl space-y-3 "
     >
 
       {/* Name */}
-      <div>
+      <div >
         <label className="block text-lg font-semibold text-[#0c0c0c]">Name *</label>
         <input
           type="text"

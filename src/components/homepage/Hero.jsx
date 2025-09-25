@@ -16,7 +16,7 @@ export default function HeroSection() {
             ease: "easeOut",
             delay: 0.3,
           }}
-          className="font-extrabold text-5xl leading-[42px] md:text-8xl md:leading-[78px] text-[#0C0C0C]  max-w-4xl  md:max-w-4xl"
+          className="font-extrabold text-5xl leading-[42px] lg:text-8xl lg:leading-[78px] md:text-6xl md:leading-[70px] text-[#0C0C0C]  max-w-4xl  md:max-w-4xl"
         >
           THE WEB DESIGN AGENCY THAT YOUR BUSINESS NEEDS
         </motion.h1>
