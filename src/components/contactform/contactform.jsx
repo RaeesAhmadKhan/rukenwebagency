@@ -44,7 +44,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-xl mx-auto p-6 bg-[#FAFAFA] shadow-lg rounded-2xl space-y-3"
+      className="max-w-xl mx-auto p-6 bg-white/80 backdrop-blur-lg shadow-lg rounded-2xl space-y-3"
     >
 
       {/* Name */}

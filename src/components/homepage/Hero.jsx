@@ -16,7 +16,7 @@ export default function HeroSection() {
             ease: "easeOut",
             delay: 0.3,
           }}
-          className="font-extrabold text-[45px] leading-[42px] md:text-[55px] md:leading-[52px] md:text-[84px] md:leading-[72px] text-[#0C0C0C]  max-w-4xl  md:max-w-3xl"
+          className="font-extrabold text-5xl leading-[42px] md:text-8xl md:leading-[78px] text-[#0C0C0C]  max-w-4xl  md:max-w-4xl"
         >
           THE WEB DESIGN AGENCY THAT YOUR BUSINESS NEEDS
         </motion.h1>
@@ -28,7 +28,7 @@ export default function HeroSection() {
             ease: "easeOut",
             delay: 0.5,
           }}
-          className="font-extrabold text-[20px] md:text-[28px] text-[#0C0C0C] text-center"
+          className="font-extrabold text-2xl text-3xl text-[#0C0C0C] text-center"
         >
           MODERN. BOLD. UNFORGETTABLE.
         </motion.p>

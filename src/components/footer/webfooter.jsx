@@ -15,9 +15,9 @@ const navLinks = [
 export default function WebFooter() {
   return (
     <>
-    <section className="hidden lg:flex flex-col top-0 bottom-0">
+    <section className="hidden lg:flex flex-col">
       {/* Contact Section */}
-      <div className="flex p-10 h-[80vh] justify-center items-center mt-43 bg-[#A240E9]">
+      <div className="flex p-10 h-[80vh] justify-center items-center  bg-[#A240E9]">
         <div className="w-1/2 max-w-2xl leading-[75px]">
           <motion.h2
             initial={{ opacity: 0, y: 80, scale: 1 }}
@@ -28,7 +28,7 @@ export default function WebFooter() {
               delay: 0.3,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="font-extrabold text-[90px] text-[#0c0c0c]"
+            className="font-extrabold text-8xl text-[#0c0c0c]"
           >
             LET’S DISCUSS YOUR PROJECT
           </motion.h2>
@@ -40,13 +40,13 @@ export default function WebFooter() {
       {/* Footer */}
       <div className="flex flex-col gap-20 px-10 h-[80vh] bg-[#0C0C0C]">
         <div className="flex justify-between h-1/4 py-15">
-          <p className="font-extrabold text-[50px] text-[#FAFAFA] hover:text-[#EAFF00]">
+          <p className="font-extrabold text-5xl text-[#FAFAFA] hover:text-[#EAFF00]">
             INSTAGRAM
           </p>
-          <p className="font-extrabold text-[50px] text-[#FAFAFA] hover:text-[#EAFF00]">
+          <p className="font-extrabold text-5xl text-[#FAFAFA] hover:text-[#EAFF00]">
             YOUTUBE
           </p>
-          <p className="font-extrabold text-[50px] text-[#FAFAFA] hover:text-[#EAFF00]">
+          <p className="font-extrabold text-5xl text-[#FAFAFA] hover:text-[#EAFF00]">
             TIKTOK
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function WebFooter() {
               <Link
                 key={link.href} // or link.name
                 href={link.href}
-                className="text-[#FAFAFA] text-[30px] font-semibold hover:text-[#EAFF00] transition"
+                className="text-[#FAFAFA] text-3xl font-semibold hover:text-[#EAFF00] transition"
               >
                 {link.name}
               </Link>
@@ -72,7 +72,7 @@ export default function WebFooter() {
           >
             RUKEN
           </Link>
-          <span className="font-medium text-[20px] text-[#FAFAFA]">©2023</span>
+          <span className="font-medium text-3xl text-[#FAFAFA]">©2023</span>
         </div>
       </div>
     </section>
@@ -94,7 +94,7 @@ export default function WebFooter() {
               delay: 0.3,
             }}
             viewport={{ once: true, amount: 0.5 }}
-            className="font-extrabold text-[70px] text-[#0c0c0c]"
+            className="font-extrabold text-7xl text-[#0c0c0c]"
           >
             LET’S DISCUSS YOUR PROJECT
           </motion.h2>
@@ -106,13 +106,13 @@ export default function WebFooter() {
       {/* Footer */}
       <div className="flex flex-col gap-20 px-10 bg-[#0C0C0C]">
         <div className="flex justify-between h-1/4 py-15">
-          <p className="font-extrabold text-[20px] text-[#FAFAFA] hover:text-[#EAFF00]">
+          <p className="font-extrabold text-xl text-[#FAFAFA] hover:text-[#EAFF00]">
             INSTAGRAM
           </p>
-          <p className="font-extrabold text-[20px] text-[#FAFAFA] hover:text-[#EAFF00]">
+          <p className="font-extrabold text-xl text-[#FAFAFA] hover:text-[#EAFF00]">
             YOUTUBE
           </p>
-          <p className="font-extrabold text-[20px] text-[#FAFAFA] hover:text-[#EAFF00]">
+          <p className="font-extrabold text-xl text-[#FAFAFA] hover:text-[#EAFF00]">
             TIKTOK
           </p>
         </div>
@@ -123,7 +123,7 @@ export default function WebFooter() {
               <Link
                 key={link.href} // or link.name
                 href={link.href}
-                className="text-[#FAFAFA] text-[20px] font-semibold hover:text-[#EAFF00] transition"
+                className="text-[#FAFAFA] text-xl font-semibold hover:text-[#EAFF00] transition"
               >
                 {link.name}
               </Link>
@@ -134,11 +134,11 @@ export default function WebFooter() {
         <div className="flex justify-between items-center h-1/4">
           <Link
             href="/home"
-            className="font-extrabold text-[60px] text-[#FAFAFA]"
+            className="font-extrabold text-6xl text-[#FAFAFA]"
           >
             RUKEN
           </Link>
-          <span className="font-medium text-[20px] text-[#FAFAFA]">©2023</span>
+          <span className="font-medium text-xl text-[#FAFAFA]">©2023</span>
         </div>
       </div>
     </section>

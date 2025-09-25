@@ -43,24 +43,24 @@ const ServicesList = [
 
 export default function ServicesSection() {
   return (
-    <section className="flex flex-col md:h-[100vh] md:my-20  my-5 overflow-hidden">
-      <h2 className="font-extrabold md:text-[90px] text-[40px] text-[#0C0C0C] p-10 pb-30 text-end">
+    <section className="flex flex-col  md:my-20  my-5 overflow-hidden">
+      <h2 className="font-extrabold md:text-8xl text-4xl text-[#0C0C0C] p-10  text-end mb-20">
         OUR SERVICES
       </h2>
       <div>
         {ServicesList.map((list) => (
           <div
             key={list.Numb}
-            className="relative group transition border-[0.1px] border-gray-200 p-5 md:p-1 text-center md:flex justify-between items-center bg-[#ffffff] text-[#0c0c0c] 
+            className="relative group transition border-1 border-gray-200 p-5 md:p-1 text-center md:flex justify-between items-center bg-[#ffffff] text-[#0c0c0c]
                     hover:bg-[#0c0c0c] hover:text-[#fafafa] 
                     transition duration-100 ease-in-out"
           >
-            <p className="text-[40px]  md:text-[120px] font-extrabold">{list.Title}</p>
-            <div className="flex flex-wrap space-x-2 space-y-2 md:max-w-xl md:opacity-0 group-hover:opacity-100 bg-[#EAFF00] border-1 border-[#0C0C0C] transition-opacity duration-500  md:p-10 p-5">
+            <p className="text-4xl  md:text-5xl lg:text-7xl font-extrabold text-start px-5">{list.Title}</p>
+            <div className="flex flex-wrap space-x-2 space-y-2 md:max-w-xl md:opacity-0 group-hover:opacity-100 bg-white rounded-2xl transition-opacity duration-500  md:p-10 p-3 m-5 w-fit">
               {list.desc.map((item, index) => (
                 <div
                   key={index}
-                  className="p-3 bg-[#0C0C0C] shadow-sm text-[#FAFAFA] font-medium w-fit h-fit"
+                  className="p-2 bg-[#0C0C0C] shadow-sm text-[#FAFAFA] font-medium w-fit h-fit text-xl"
                 >
                   {item}
                 </div>
