@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <section className=" md:h-[90vh] py-10 md:py-50 p-5 md:py-10">
       <NetworkBackground />
-      <div className="flex flex-col gap-50 md:gap-60">
+      <div className="flex flex-col gap-20 md:gap-60">
         <motion.h1
           initial={{ opacity: 0, y: 80, scale: 1 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
