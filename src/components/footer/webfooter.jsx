@@ -24,11 +24,11 @@ export default function WebFooter() {
               initial={{ opacity: 0, y: 80, scale: 1 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{
-                duration: 0.5,
+                duration: 0.8,
                 ease: "easeOut",
-                delay: 0.3,
+                delay: 0.1,
               }}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.4 }}
               className="font-extrabold text-8xl text-[#0c0c0c]"
             >
               LET’S DISCUSS YOUR PROJECT
@@ -37,8 +37,8 @@ export default function WebFooter() {
           <div className="w-1/2">
           <motion.div initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
-      viewport={{ once: true, amount: 0.6 }}>
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+      viewport={{ once: true, amount: 0.4 }}>
             <ContactForm />
           </motion.div>
           </div>
@@ -51,24 +51,24 @@ export default function WebFooter() {
             <motion.p 
             initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
-      viewport={{ once: true, amount: 0.6 }}
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.1}}
+      viewport={{ once: true, amount: 0.4 }}
             className="font-extrabold text-5xl text-[#FAFAFA] hover:text-[#EAFF00]">
               INSTAGRAM
             </motion.p>
             <motion.p 
             initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
-      viewport={{ once: true, amount: 0.6 }}
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+      viewport={{ once: true, amount: 0.4 }}
             className="font-extrabold text-5xl text-[#FAFAFA] hover:text-[#EAFF00]">
               YOUTUBE
             </motion.p>
             <motion.p 
             initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
-      viewport={{ once: true, amount: 0.6 }}
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+      viewport={{ once: true, amount: 0.4 }}
             className="font-extrabold text-5xl text-[#FAFAFA] hover:text-[#EAFF00]">
               TIKTOK
             </motion.p>
@@ -81,11 +81,11 @@ export default function WebFooter() {
                 <motion.div initial={{ opacity: 0, y: 80, scale: 1 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{
-                duration: 1,
+                duration: 0.8,
                 ease: "easeOut",
-                delay: 0.3,
+                delay: 0.1,
               }}
-              viewport={{ once: true, amount: 0.5 }}>
+              viewport={{ once: true, amount: 0.4 }}>
                 <Link
                   key={link.name}
                   href={link.href}
@@ -120,11 +120,11 @@ export default function WebFooter() {
               initial={{ opacity: 0, y: 80, scale: 1 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{
-                duration: 1,
+                duration: 0.8,
                 ease: "easeOut",
-                delay: 0.3,
+                delay: 0.1,
               }}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.4 }}
               className="font-extrabold text-7xl text-[#0c0c0c]"
             >
               LET’S DISCUSS YOUR PROJECT
@@ -142,22 +142,22 @@ export default function WebFooter() {
             <motion.p 
             initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
-      viewport={{ once: true, amount: 0.6 }} className="font-extrabold text-xl text-[#FAFAFA] hover:text-[#EAFF00]">
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+      viewport={{ once: true, amount: 0.4 }} className="font-extrabold text-xl text-[#FAFAFA] hover:text-[#EAFF00]">
               INSTAGRAM
             </motion.p>
             <motion.p 
             initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
-      viewport={{ once: true, amount: 0.6 }} className="font-extrabold text-xl text-[#FAFAFA] hover:text-[#EAFF00]">
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+      viewport={{ once: true, amount: 0.4 }} className="font-extrabold text-xl text-[#FAFAFA] hover:text-[#EAFF00]">
               YOUTUBE
             </motion.p>
             <motion.p 
             initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
-      viewport={{ once: true, amount: 0.6 }} className="font-extrabold text-xl text-[#FAFAFA] hover:text-[#EAFF00]">
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+      viewport={{ once: true, amount: 0.4 }} className="font-extrabold text-xl text-[#FAFAFA] hover:text-[#EAFF00]">
               TIKTOK
             </motion.p>
           </div>
@@ -169,11 +169,11 @@ export default function WebFooter() {
                 <motion.div initial={{ opacity: 0, y: 80, scale: 1 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{
-                duration: 1,
+                duration: 0.8,
                 ease: "easeOut",
-                delay: 0.3,
+                delay: 0.1,
               }}
-              viewport={{ once: true, amount: 0.5 }}>
+              viewport={{ once: true, amount: 0.4 }}>
                 <Link
                   key={link.href}
                   href={link.href}

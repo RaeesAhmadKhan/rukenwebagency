@@ -56,11 +56,11 @@ export default function ServicesSection() {
           <motion.div initial={{ opacity: 0, y: 80, scale: 1 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{
-                duration: 0.5,
+                duration: 0.8,
                 ease: "easeOut",
-                delay: 0.3,
+                delay: 0.1,
               }}
-              viewport={{ once: true, amount: 0.5 }}>
+              viewport={{ once: true, amount: 0.4 }}>
           <div
             key={list.Numb}
             className="relative group transition border-b border-gray-700 p-5 md:p-1 text-center md:flex justify-between items-center text-[#fafafa]

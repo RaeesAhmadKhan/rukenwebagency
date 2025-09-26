@@ -21,19 +21,19 @@ const wordAnimation = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 1.2, ease: "easeOut" },
+    transition: { duration: 0.8, ease: "easeOut" },
   },
 };
 
 export default function AboutSection() {
   return (
-      <section className="bg-white md:p-10 p-5 z-100 gap-10 md:gap-30 my-40">
+      <section className="bg-white md:p-10 p-5 z-100 gap-10 md:gap-30 my-30">
   <div className="flex items-center justify-center py-20">
     <motion.h2
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-      viewport={{ once: true, amount: 0.6 }}
+      viewport={{ once: true, amount: 0.4 }}
       className="font-extrabold text-5xl md:text-6xl lg:text-7xl text-[#0C0C0C]"
     >
       ABOUT RUKEN
@@ -49,7 +49,7 @@ export default function AboutSection() {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.5 }}
     >
       {sentence.map((word, index) => (
         <motion.span

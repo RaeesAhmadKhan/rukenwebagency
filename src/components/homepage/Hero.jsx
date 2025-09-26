@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className=" md:h-[90vh] py-10 md:py-50 p-5 md:py-10">
+    <section className=" py-10 md:py-40 p-5">
       <NetworkBackground />
       <div className="flex flex-col gap-20 md:gap-60">
         <motion.h1
           initial={{ opacity: 0, y: 80, scale: 1 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{
-            duration: 1,
+            duration: 0.8,
             ease: "easeOut",
             delay: 0.3,
           }}
-          className="font-extrabold text-5xl leading-[42px] lg:text-8xl lg:leading-[78px] md:text-6xl md:leading-[70px] text-[#0C0C0C]  max-w-4xl  md:max-w-4xl"
+          className="font-extrabold text-5xl leading-[42px] lg:text-8xl lg:leading-[78px] md:text-5xl md:leading-[65px] text-[#0C0C0C]  max-w-4xl  md:max-w-4xl"
         >
           THE WEB DESIGN AGENCY THAT YOUR BUSINESS NEEDS
         </motion.h1>
@@ -24,7 +24,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 80, scale: 1 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{
-            duration: 1,
+            duration: 0.8,
             ease: "easeOut",
             delay: 0.5,
           }}
@@ -36,7 +36,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 80, scale: 1 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{
-            duration: 1,
+            duration: 0.8,
             ease: "easeOut",
             delay: 1,
           }}
