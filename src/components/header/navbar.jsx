@@ -45,7 +45,7 @@ export default function Navbar() {
        px-2 h-[60px] rounded-2xl
       shadow-[0_4px_20px_rgba(0,0,0,0.1)] 
       backdrop-blur-md 
-      md:max-w-[800px] 
+      md:max-w-[650px] 
       transition-all duration-300 z-70
       ${
         isScrolled ? "md:fixed top-4 left-1/2 -translate-x-1/2 z-50" : "relative"
@@ -57,12 +57,12 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-4">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="text-[#FAFAFA] text-[20px] font-semibold hover:text-[#EAFF00] transition"
+              className="text-[#FAFAFA] text-[18px] font-semibold hover:text-[#EAFF00] transition"
             >
               {link.name}
             </Link>

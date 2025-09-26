@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
+  "dev": "npx kill-port 3000 && next dev",
+  "dev:clean": "npx kill-port 3000 && next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "eslint"
+},
   "dependencies": {
     "@react-three/fiber": "^9.3.0",
     "lucide-react": "^0.544.0",
