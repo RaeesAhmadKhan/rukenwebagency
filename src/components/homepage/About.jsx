@@ -45,8 +45,8 @@ export default function AboutSection() {
     <motion.p
       className="flex flex-wrap font-semibold text-gray-800
                  text-4xl leading-[35px] max-w-5xl
-                 md:text-5xl md:leading-[60px] 
-                 lg:text-5xl xl:text-6xl lg:leading-[50px]"
+                 md:text-4xl md:leading-[60px] 
+                 lg:text-4xl xl:text-6xl lg:leading-[58px]"
       variants={container}
       initial="hidden"
       whileInView="visible"
