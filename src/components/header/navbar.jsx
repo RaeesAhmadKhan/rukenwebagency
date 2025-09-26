@@ -42,7 +42,7 @@ export default function Navbar() {
         }}
         className={`md:container flex items-center justify-between 
       bg-gradient-to-r from-[#0C0C0C] via-[#1A1A1A] to-[#0C0C0C] 
-       px-2 h-[65px] rounded-2xl
+       px-2 h-[60px] rounded-2xl
       shadow-[0_4px_20px_rgba(0,0,0,0.1)] 
       backdrop-blur-md 
       md:max-w-[800px] 

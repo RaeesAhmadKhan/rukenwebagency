@@ -18,9 +18,9 @@ const ServicesList = [
     Numb: 2,
     desc: [
       "Google Ads",
+      "Meta Ads",
       "Original SEO",
-      "Customized Meta Ads",
-      "Social Media Posts Ads",
+      "Social Media Ads",
     ],
   },
   {
@@ -45,6 +45,23 @@ const ServicesList = [
   },
 ];
 
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.09 },
+  },
+};
+
+const wordAnimation = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+
 export default function ServicesSection() {
   return (
     <section className="flex flex-col  md:py-40  py-10 overflow-hidden bg-[#0c0c0c]">
@@ -58,7 +75,7 @@ export default function ServicesSection() {
               transition={{
                 duration: 0.8,
                 ease: "easeOut",
-                delay: 0.1,
+                delay: 0.3,
               }}
               viewport={{ once: true, amount: 0.4 }}>
           <div
@@ -73,7 +90,7 @@ export default function ServicesSection() {
                 <div
                   key={index}
                   className="p-2 bg-[#EAFF00]
-                  text-[#0C0C0C] font-medium w-fit h-fit text-xl rounded-md"
+                  text-[#0C0C0C] font-medium w-fit h-fit text-xl rounded-md text-start"
                 >
                   {item}
                 </div>
