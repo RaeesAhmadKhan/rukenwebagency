@@ -143,21 +143,21 @@ export default function WebFooter() {
             initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
-      viewport={{ once: true, amount: 0.4 }} className="font-extrabold text-xl text-[#FAFAFA] hover:text-[#EAFF00]">
+      viewport={{ once: true, amount: 0.4 }} className="font-extrabold text-lg text-[#FAFAFA] hover:text-[#EAFF00]">
               INSTAGRAM
             </motion.p>
             <motion.p 
             initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
-      viewport={{ once: true, amount: 0.4 }} className="font-extrabold text-xl text-[#FAFAFA] hover:text-[#EAFF00]">
+      viewport={{ once: true, amount: 0.4 }} className="font-extrabold text-lg text-[#FAFAFA] hover:text-[#EAFF00]">
               YOUTUBE
             </motion.p>
             <motion.p 
             initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-      viewport={{ once: true, amount: 0.4 }} className="font-extrabold text-xl text-[#FAFAFA] hover:text-[#EAFF00]">
+      viewport={{ once: true, amount: 0.4 }} className="font-extrabold text-lg text-[#FAFAFA] hover:text-[#EAFF00]">
               TIKTOK
             </motion.p>
           </div>

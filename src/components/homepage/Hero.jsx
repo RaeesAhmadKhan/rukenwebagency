@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-   <section className="py-28 md:py-40 p-5 h-screen overflow-hidden">
+   <section className="py-28 md:py-40 p-5 relative min-h-screen">
   <NetworkBackground />
-  <div className="flex flex-col flex-wrap  gap-50 md:gap-60 lg:gap-60">
+  <div className="flex flex-col gap-40 md:gap-40 lg:gap-50">
     <motion.h1
       initial={{ opacity: 0, y: 80 }}
       animate={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ export default function HeroSection() {
     <motion.p
       initial={{ opacity: 0, y: 80 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+      transition={{ duration: 0.8, ease: "easeOut", delay: 0.7 }}
       className="font-extrabold text-xl md:text-2xl lg:text-3xl text-[#0C0C0C] text-center"
     >
       MODERN. BOLD. UNFORGETTABLE.
