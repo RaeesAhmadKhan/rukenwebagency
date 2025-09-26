@@ -27,8 +27,9 @@ const wordAnimation = {
 
 export default function AboutSection() {
   return (
-      <section className="bg-white md:p-10 p-5 z-100 gap-10 md:gap-50 my-40">
-  <div className="flex items-center justify-center my-20">
+      <section className="bg-white md:p-10 p-5 z-100 my-5">
+        <div className="gap-10 md:flex xl:gap-50 md:gap-50">
+  <div className="flex items-center justify-center my-10">
     <motion.h2
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +41,7 @@ export default function AboutSection() {
     </motion.h2>
   </div>
 
-  <div className="flex flex-col justify-center items-center gap-20 md:gap-30">
+  <div className="flex flex-col justify-center items-center gap-20 md:gap-30 mb-20">
     <motion.p
       className="flex flex-wrap font-semibold text-gray-800
                  text-4xl leading-[35px] max-w-5xl
@@ -74,6 +75,7 @@ export default function AboutSection() {
         LEARN MORE ABOUT US
       </Link>
     </motion.div>
+  </div>
   </div>
 </section>
 
