@@ -69,7 +69,7 @@ export default function AboutSection() {
     >
       <Link
         href="/about"
-        className="font-medium text-base bg-[#EAFF00] border border-black p-4 w-fit"
+        className="font-medium text-base bg-[#EAFF00] border border-black p-4 w-fit rounded-md"
       >
         LEARN MORE ABOUT US
       </Link>

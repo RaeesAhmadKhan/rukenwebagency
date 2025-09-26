@@ -42,7 +42,7 @@ export default function HeroSection() {
           }}
           className="flex justify-end"
         >
-          <div className="flex border-1 border-black w-fit ">
+          <div className="flex border-1 border-black w-fit rounded-md">
             <p className="p-3 bg-[#EAFF00] text-[#0C0C0C]">Since 2023</p>
             <p className="p-3 bg-[#0C0C0C] text-[#FAFAFA]">Present</p>
           </div>

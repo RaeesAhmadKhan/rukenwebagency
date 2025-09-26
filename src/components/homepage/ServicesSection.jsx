@@ -63,7 +63,7 @@ export default function ServicesSection() {
               viewport={{ once: true, amount: 0.5 }}>
           <div
             key={list.Numb}
-            className="relative group transition  p-5 md:p-1 text-center md:flex justify-between items-center text-[#fafafa]
+            className="relative group transition border-b border-gray-700 p-5 md:p-1 text-center md:flex justify-between items-center text-[#fafafa]
                     hover:text-8xl 
                     transition duration-100 ease-in-out"
           >
@@ -73,7 +73,7 @@ export default function ServicesSection() {
                 <div
                   key={index}
                   className="p-2 bg-[#EAFF00]
-                  text-[#0C0C0C] font-medium w-fit h-fit text-xl"
+                  text-[#0C0C0C] font-medium w-fit h-fit text-xl rounded-md"
                 >
                   {item}
                 </div>
