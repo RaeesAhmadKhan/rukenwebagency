@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+{/* Repeat the names twice to create seamless loop 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -47,7 +47,7 @@ export default function ContactForm() {
       className="max-w-xl mx-auto p-6 bg-white/80 shadow-4xl rounded-2xl space-y-3 "
     >
 
-      {/* Name */}
+      {/* Name 
       <div >
         <label className="block text-lg font-semibold text-[#0c0c0c]">Name *</label>
         <input
@@ -60,7 +60,7 @@ export default function ContactForm() {
         />
       </div>
 
-      {/* Phone */}
+      {/* Phone 
       <div>
         <label className="block text-lg font-semibold text-[#0c0c0c]">Phone *</label>
         <input
@@ -73,7 +73,7 @@ export default function ContactForm() {
         />
       </div>
 
-      {/* Company Name (Optional) */}
+      {/* Company Name (Optional) 
       <div>
         <label className="block text-lg font-semibold text-[#0c0c0c]">
           Company Name (optional)
@@ -87,7 +87,7 @@ export default function ContactForm() {
         />
       </div>
 
-      {/* Services */}
+      {/* Services 
       <div>
         <label className="block text-lg font-semibold text-[#0c0c0c]">
           What services do you need? *
@@ -110,7 +110,7 @@ export default function ContactForm() {
         </div>
       </div>
 
-      {/* Description */}
+      {/* Description 
       <div>
         <label className="block text-lg font-semibold text-[#0c0c0c]">
           Project Description *
@@ -124,7 +124,7 @@ export default function ContactForm() {
         ></textarea>
       </div>
 
-      {/* Submit */}
+      {/* Submit 
       <button
         type="submit"
         className="w-full py-3 bg-[#0c0c0c] text-white font-semibold rounded-lg hover:bg-[#EAFF00] hover:text-[#0c0c0c] transition border"
@@ -132,5 +132,103 @@ export default function ContactForm() {
         Submit
       </button>
     </form>
+  );
+}*/}
+
+
+export default function Form() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    details: "",
+    services: [],
+  });
+
+  const services = [
+    "Web Design",
+    "Custom Website",
+    "SEO",
+    "Google Ads",
+    "Web Maintenance",
+    "Web Hosting",
+  ];
+
+
+  const toggleService = (service) => {
+    setFormData((prev) => ({
+      ...prev,
+      services: prev.services.includes(service)
+        ? prev.services.filter((s) => s !== service)
+        : [...prev.services, service],
+    }));
+  };
+
+  return (
+    <div className="max-w-4xl mx-auto p-6 bg-[#FAFAFA] rounded-2xl shadow-xl">
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <input
+          type="text"
+          placeholder="Full name"
+          required
+          className="p-4 rounded-lg bg-[#EAFF00] border placeholder-gray-700"
+          value={formData.name}
+          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          required
+          className="p-4 rounded-lg bg-[#EAFF00] border placeholder-gray-700"
+          value={formData.email}
+          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+        />
+        <input
+          type="text"
+          placeholder="Company"
+          required
+          className="p-4 rounded-lg bg-[#EAFF00] border placeholder-gray-700"
+          value={formData.company}
+          onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+        />
+      </div>
+
+      <textarea
+        placeholder="Tell me your goals"
+        required
+        className="w-full mt-4 p-4 rounded-lg bg-[#EAFF00] border placeholder-gray-700"
+        rows="4"
+        value={formData.details}
+        onChange={(e) => setFormData({ ...formData, details: e.target.value })}
+      />
+
+      <div className="grid grid-cols-1 gap-4 mt-4">
+        {/* Services */}
+        <div>
+          <p className="font-semibold text-lg text-gray-900 mb-2">What services do you need? *</p>
+          <div className="flex flex-wrap gap-2">
+            {services.map((service) => (
+              <button
+                key={service}
+                onClick={() => toggleService(service)}
+                className={`px-3 py-1 rounded-lg border ${
+                  formData.services.includes(service)
+                    ? "bg-[#EAFF00] text-gray-700"
+                    : "bg-gray-100 text-black"
+                }`}
+              >
+                {service}
+              </button>
+            ))}
+          </div>
+        </div>
+
+      </div>
+
+      <button className="mt-6 px-6 py-3 rounded-full bg-[#0c0c0c] text-white font-semibold shadow hover:bg-gray-700 transition">
+        Submit
+      </button>
+    </div>
   );
 }

@@ -14,6 +14,7 @@ const names = [
   "Tailwind",
   "Shopify",
   "Motion",
+  "GSAP",
 ];
 
 export default function InfiniteMarquee() {

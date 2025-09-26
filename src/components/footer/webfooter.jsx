@@ -18,7 +18,7 @@ export default function WebFooter() {
       {/* Tablet & Desktop Footer */}
       <section className="hidden lg:flex flex-col">
         {/* Contact Section */}
-        <div className="flex p-10 justify-center items-center bg-[#A240E9] py-40">
+        <div className="flex p-10 justify-center items-center bg-[#B673E5] py-40">
           <div className="w-1/2 max-w-2xl leading-[75px]">
             <motion.h2
               initial={{ opacity: 0, y: 80, scale: 1 }}
