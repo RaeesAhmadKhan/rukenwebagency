@@ -18,7 +18,7 @@ export default function WebFooter() {
       {/* Tablet & Desktop Footer */}
       <section className="hidden lg:flex flex-col">
         {/* Contact Section */}
-        <div className="flex p-10 justify-center items-center bg-[#A240E9] py-30">
+        <div className="flex p-10 justify-center items-center bg-[#A240E9] py-40">
           <div className="w-1/2 max-w-2xl leading-[75px]">
             <motion.h2
               initial={{ opacity: 0, y: 80, scale: 1 }}
@@ -45,7 +45,7 @@ export default function WebFooter() {
         </div>
 
         {/* Footer Section */}
-        <div className="flex flex-col justify-between px-10 bg-[#0C0C0C] pt-20 md:h-[75vh]">
+        <div className="flex flex-col justify-between px-10 bg-[#0C0C0C] pt-20 gap-40">
           {/* Socials */}
           <div className="flex justify-between">
             <motion.p 
@@ -114,8 +114,8 @@ export default function WebFooter() {
       {/* Mobile Footer */}
       <section className="lg:hidden">
         {/* Contact Section */}
-        <div className="flex flex-wrap p-5 justify-center items-center bg-[#A240E9]">
-          <div className="leading-[65px] py-5">
+        <div className="flex flex-wrap p-5 justify-center items-center bg-[#A240E9] py-10">
+          <div className="leading-[65px] py-10">
             <motion.h2
               initial={{ opacity: 0, y: 80, scale: 1 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -136,7 +136,7 @@ export default function WebFooter() {
         </div>
 
         {/* Footer Section */}
-        <div className="flex flex-col gap-10 px-6 bg-[#0C0C0C] py-2">
+        <div className="flex flex-col gap-12 px-6 bg-[#0C0C0C] py-2">
           {/* Socials */}
           <div className="flex justify-between mt-10">
             <motion.p 

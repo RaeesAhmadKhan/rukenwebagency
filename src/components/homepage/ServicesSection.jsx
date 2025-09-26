@@ -47,7 +47,7 @@ const ServicesList = [
 
 export default function ServicesSection() {
   return (
-    <section className="flex flex-col  md:py-30  py-10 overflow-hidden bg-[#0c0c0c]">
+    <section className="flex flex-col  md:py-40  py-10 overflow-hidden bg-[#0c0c0c]">
       <h2 className="font-extrabold md:text-8xl text-5xl text-[#fafafa] md:p-10 p-5 md:text-end text-center mb-20">
         OUR SERVICES
       </h2>
