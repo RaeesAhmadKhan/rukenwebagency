@@ -41,12 +41,12 @@ export default function AboutSection() {
           </motion.h2>
         </div>
 
-        <div className="flex flex-col justify-center items-center gap-20 md:gap-30 mb-20">
+        <div className="flex flex-col justify-center gap-20 md:gap-30 mb-20">
           <motion.p
             className="flex flex-wrap font-semibold text-gray-800
                  text-4xl leading-[35px] max-w-5xl
-                 md:text-4xl md:leading-[60px] 
-                 lg:text-5xl xl:text-7xl xl:leading-[70px] lg:leading-[50px]"
+                 md:text-[45px] md:leading-[45px] 
+                xl:text-7xl xl:leading-[70px]"
             variants={container}
             initial="hidden"
             whileInView="visible"
@@ -67,6 +67,7 @@ export default function AboutSection() {
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <Link
               href="/about"

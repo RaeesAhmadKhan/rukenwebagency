@@ -31,7 +31,7 @@ export default function WebFooter() {
               viewport={{ once: true, amount: 0.4 }}
               className="font-extrabold text-8xl text-[#0c0c0c]"
             >
-              LET’S DISCUSS YOUR PROJECT
+              LET’S DISCUSS YOUR PROJECT 🙃
             </motion.h2>
           </div>
           <div className="w-1/2">
@@ -127,7 +127,7 @@ export default function WebFooter() {
               viewport={{ once: true, amount: 0.4 }}
               className="font-extrabold text-7xl text-[#0c0c0c]"
             >
-              LET’S DISCUSS YOUR PROJECT
+              LET’S DISCUSS YOUR PROJECT 🙃
             </motion.h2>
           </div>
           <div>

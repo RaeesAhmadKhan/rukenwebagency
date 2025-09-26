@@ -22,10 +22,11 @@ const ServicesList = [
     Title: "CUSTOM WEBSITE",
     Numb: 3,
     desc: [
-      "Customize Web App",
+      "Customized Web App",
       "Website in Next.js",
-      "Easy to use CMS",
-      "Custom Graphics & 3D Vectors",
+      "CMS",
+      "3D Vectors",
+      "Custom Graphics",
     ],
   },
   {
@@ -41,7 +42,7 @@ const ServicesList = [
   {
     Title: "WEB HOSTING",
     Numb: 5,
-    desc: ["99% Uptime", "Fast-Loading","Best Pricing","Regular Backups", ],
+    desc: ["99% Uptime", "Fast-Loading","👍 Pricing","Regular Backups", ],
   },
 ];
 

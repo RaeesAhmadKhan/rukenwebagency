@@ -6,10 +6,10 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react"; // for icons
 
 const navLinks = [
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Our Work", href: "/work" },
-  { name: "Pricing", href: "/pricing" },
+  { no: 1, name: "About", href: "/about" },
+  { no: 2, name: "Services", href: "/services" },
+  { no: 3, name: "Our Work", href: "/work" },
+  { no: 4, name: "Pricing", href: "/pricing" },
 ];
 
 export default function Navbar() {
@@ -31,7 +31,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className=" p-5">
+    <nav className="  absolute inset-0 z-100">
       <motion.div
         initial={{ opacity: 0, y: -80, scale: 1 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -41,18 +41,19 @@ export default function Navbar() {
           delay: 0.1,
         }}
         className={`md:container flex items-center justify-between 
-      bg-gradient-to-r from-[#0C0C0C] via-[#1A1A1A] to-[#0C0C0C] 
-       px-2 h-[60px] rounded-2xl
+      bg-gradient-to-r from-[#0C0C0C] via-[#1A1A1A] to-[#0C0C0C]
+       px-2 h-[60px] rounded-2xl m-5
       shadow-[0_4px_20px_rgba(0,0,0,0.1)] 
       backdrop-blur-md 
       md:max-w-[650px] 
-      transition-all duration-300 z-70
-      ${
-        isScrolled ? "md:fixed top-4 left-1/2 -translate-x-1/2 z-50" : "relative"
-      }`}
+      transition-all duration-300
+      ${isScrolled ? "md:fixed left-1/2 -translate-x-1/2" : "relative"}`}
       >
         {/* Logo */}
-        <Link href="/" className="text-[#FAFAFA] text-[28px] font-extrabold px-3">
+        <Link
+          href="/"
+          className="text-[#FAFAFA] text-[28px] font-extrabold px-3"
+        >
           RUKEN
         </Link>
 
@@ -88,10 +89,10 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#0C0C0C] mt-2 rounded-xl shadow-lg w-full mx-auto p-4 space-y-4">
+        <div className="md:hidden bg-[#0C0C0C] mt-2 rounded-xl shadow-lg w-full mx-auto p-4 space-y-4 ">
           {navLinks.map((link) => (
             <Link
-              key={link.name}
+              key={link.no}
               href={link.href}
               className="block text-[#FAFAFA] text-[18px] font-semibold hover:text-[#EAFF00] transition"
               onClick={() => setMenuOpen(false)}
