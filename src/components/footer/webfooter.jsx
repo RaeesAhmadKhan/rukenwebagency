@@ -45,7 +45,7 @@ export default function WebFooter() {
         </div>
 
         {/* Footer Section */}
-        <div className="flex flex-col justify-between px-10 bg-[#0C0C0C] pt-20 gap-40">
+        <div className="flex flex-col justify-between px-10 bg-[#020202] pt-20 gap-40">
           {/* Socials */}
           <div className="flex justify-between">
             <motion.p 
@@ -136,7 +136,7 @@ export default function WebFooter() {
         </div>
 
         {/* Footer Section */}
-        <div className="flex flex-col gap-12 px-6 bg-[#0C0C0C] py-2">
+        <div className="flex flex-col gap-12 px-6 bg-[#020202] py-2">
           {/* Socials */}
           <div className="flex justify-between mt-10">
             <motion.p 
@@ -166,7 +166,9 @@ export default function WebFooter() {
           <div>
             <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
-                <motion.div initial={{ opacity: 0, y: 80, scale: 1 }}
+                <motion.div 
+                key={link.id}
+                initial={{ opacity: 0, y: 80, scale: 1 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               transition={{
                 duration: 0.8,

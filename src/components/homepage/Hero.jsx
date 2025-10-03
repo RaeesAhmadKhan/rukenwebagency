@@ -1,12 +1,15 @@
 "use client";
 
 import NetworkBackground from "@/components/threejs/threejs";
+import ParticleShape from "@/components/threejs/threejs";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-   <section className="py-20 md:py-20 p-5 relative min-h-screen">
-  <NetworkBackground />
+   <section className="py-20 md:py-20 p-5 relative min-h-screen z-20">
+ 
+  <ParticleShape/>
+  
   <div className="flex flex-col justify-between gap-40 md:gap-40 lg:gap-40 xl:gap-80 mt-30">
     <motion.h1
       initial={{ opacity: 0, y: 80 }}

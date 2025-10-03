@@ -2,7 +2,6 @@ import HeroSection from "@/components/homepage/Hero";
 import AboutSection from "@/components/homepage/About";
 import InfiniteMarquee from "@/components/homepage/Marque";
 import ServicesSection from "@/components/homepage/ServicesSection";
-import { Section } from "lucide-react";
 
 export const metadata = {
   title: "RUKEN - Web Design Agency",

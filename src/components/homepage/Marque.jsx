@@ -19,7 +19,7 @@ const names = [
 
 export default function InfiniteMarquee() {
   return (
-    <div className="overflow-hidden w-full bg-[#0C0C0C] py-7 md:py-10 mt-20 md:mt-0">
+    <div className="overflow-hidden w-full bg-[#020202] py-7 md:py-10 mt-20 md:mt-0">
       <motion.div
         className="flex md:space-x-10 space-x-5 whitespace-nowrap text-[#FAFAFA] font-extrabold text-2xl md:text-7xl"
         animate={{ x: ["100%", "-100%"] }} // move from right to left

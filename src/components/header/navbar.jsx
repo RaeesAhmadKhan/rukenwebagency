@@ -41,8 +41,8 @@ export default function Navbar() {
           delay: 0.1,
         }}
         className={`md:container flex items-center justify-between 
-      bg-gradient-to-r from-[#0C0C0C] via-[#1A1A1A] to-[#0C0C0C]
-       px-2 h-[60px] rounded-2xl m-5
+      bg-gradient-to-r from-[#020202] via-[#1A1A1A] to-[#0C0C0C]
+       px-2 h-[56px] rounded-lg m-5
       shadow-[0_4px_20px_rgba(0,0,0,0.1)] 
       backdrop-blur-md 
       md:max-w-[650px] 
@@ -73,7 +73,7 @@ export default function Navbar() {
         {/* Contact Button */}
         <Link
           href="/contact"
-          className="hidden md:block p-4 bg-[#EAFF00] text-[#0C0C0C] rounded-md font-medium hover:bg-[#d4e600] transition"
+          className="hidden md:block p-[15px] bg-[#EAFF00] text-[#0C0C0C] rounded-md font-medium hover:bg-[#d4e600] transition"
         >
           Contact
         </Link>

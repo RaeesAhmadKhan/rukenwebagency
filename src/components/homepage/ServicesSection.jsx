@@ -65,13 +65,14 @@ const wordAnimation = {
 
 export default function ServicesSection() {
   return (
-    <section className="flex flex-col  md:py-40  py-10 overflow-hidden bg-[#0c0c0c]">
+    <section className="flex flex-col  md:py-40  py-10 overflow-hidden bg-[#020202]">
       <h2 className="font-extrabold md:text-8xl text-5xl text-[#fafafa] md:p-10 p-5 md:text-end text-center mb-20">
         OUR SERVICES
       </h2>
       <div>
-        {ServicesList.map((list) => (
+        {ServicesList.map((service) => (
           <motion.div
+          key={service.id}
             initial={{ opacity: 0, y: 80, scale: 1 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{
@@ -82,16 +83,16 @@ export default function ServicesSection() {
             viewport={{ once: true, amount: 0.4 }}
           >
             <div
-              key={list.Numb}
+              key={service.Numb}
               className="relative group transition border-b border-gray-700 p-5 md:p-1 text-center md:flex justify-between items-center text-[#fafafa]
                     hover:text-8xl 
                     transition duration-100 ease-in-out"
             >
               <p className="text-4xl  md:text-5xl lg:text-7xl font-extrabold text-start px-5">
-                {list.Title}
+                {service.Title}
               </p>
               <div className="flex flex-wrap space-x-2 group-hover:space-x-8 group-hover:space-y-4 space-y-2 md:max-w-xl md:p-5 p-3 m-5 w-fit">
-                {list.desc.map((item, index) => (
+                {service.desc.map((item, index) => (
                   <div
                     key={index}
                     className="p-2 bg-[#EAFF00]
